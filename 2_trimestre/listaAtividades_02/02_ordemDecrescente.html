@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 <script>
     /*
     //PROBLEMA
@@ -5,10 +6,33 @@
     */
 
     //ENTRADA
+    const number1 = Number(prompt(`Diga um número inteiro.`).trim().replace(",", "."));
+    const number2 = Number(prompt(`Diga um segundo número inteiro.`).trim().replace(",", "."));
+    const number3 = Number(prompt(`Diga um terceiro número inteiro.`).trim().replace(",", "."));
 
-    
     //PROCESSAMENTO
-    
-    //SAÍDA
-    
+    if (number1 > number2 && number1 > number3) {
+        if (number2 > number3) {
+            alert(`Em ordem descrescente fica: ${number1}, ${number2}, ${number3}.`);
+        }
+        else {
+            alert(`Em ordem descrescente fica: ${number1}, ${number3}, ${number2}.`);
+        }
+    }
+    else if (number2 > number1 && number2 > number3) {
+        if (number1 > number3) {
+            alert(`Em ordem descrescente fica: ${number2}, ${number1}, ${number3}.`);
+        }
+        else {
+            alert(`Em ordem descrescente fica: ${number2}, ${number1}, ${number3}.`);
+        }
+    }
+    else if (number3 > number1 && number3 > number2) {
+        if (number1 > number2) {
+            alert(`Em ordem descrescente fica: ${number3}, ${number1}, ${number2}.`);
+        }
+        else {
+            alert(`Em ordem descrescente fica: ${number3}, ${number2}, ${number1}.`);
+        }
+    }         
 </script>

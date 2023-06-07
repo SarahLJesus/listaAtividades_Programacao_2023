@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 <script>
     /*
     //PROBLEMA
@@ -12,12 +13,21 @@
     */
 
     //ENTRADA
+    const turno = prompt(`Diga em que turno você estuda, responda com M para o período matutino, V para o vespertino ou N para o noturno.`).toLowerCase();
 
-    
     //PROCESSAMENTO
-
-    
+    if (turno === "m") {
+        alert(`Bom dia!`);
+    }
+    else if (turno === "v") {
+        alert(`Boa tarde!`);
+    }
+    else if (turno === "n") {
+        alert(`Boa noite!`);
+    }
+    else {
+        alert(`Resposta inválida.`);
+    }
     //SAÍDA
-    
 
 </script>
